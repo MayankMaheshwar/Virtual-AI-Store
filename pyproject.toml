@@ -1,0 +1,7 @@
+[tool.poetry]
+name = "genie"
+version = "0.1.0"
+description = "AI sales bot"
+
+
+[tool.poetry.dependencies]

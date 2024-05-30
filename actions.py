@@ -1,7 +1,5 @@
 from crewai import Agent
 
-
-
 from langchain.tools.yahoo_finance_news import YahooFinanceNewsTool
 
 class StockAnalysisAgents():
