@@ -59,3 +59,21 @@ class StockAnalysisAgents():
         YahooFinanceNewsTool()
       ]
     )
+
+    def trader(self):
+      return Agent(
+        role='Stock Trader',
+        goal="""Trade your stock portfolio with ease""",
+        backstory="""You're the most experienced trader and you
+        combine various analytical insights to formulate
+        strategic investment advice. You are now working for
+        a super important customer you need to impress.""",
+        verbose=True,
+        tools=[
+          BrowserTools.scrape_and_summarize_website,
+          SearchTools.search_internet,
+          SearchTools.search_news,
+          SECTools.search_10q,
+          SECTools.search_10k
+        ]
+      )
